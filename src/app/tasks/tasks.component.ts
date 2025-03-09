@@ -30,6 +30,13 @@ export class TasksComponent {
     {
       id: 't3',
       userId: 'u3',
+      title: 'Build first prototype',
+      summary: 'Build a first prototype of the online shop website',
+      dueDate: '2024-05-31',
+    },
+    {
+      id: 't4',
+      userId: 'u3',
       title: 'Prepare issue template',
       summary:
         'Prepare and describe an issue template which will help with project management',
