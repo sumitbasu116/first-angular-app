@@ -57,4 +57,8 @@ export class TasksComponent {
   onAddingTask(){
     this.isAddingTask = true;
   }
+
+  cancelTaskWindowEventConsumer(){
+    this.isAddingTask = false;
+  }
 }
