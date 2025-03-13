@@ -1,6 +1,7 @@
 
 @if (isAddingTask) {
-    <app-new-task (doCancel)="cancelTaskWindowEventConsumer()" (addTaskEventEmitVar)="addNewTask($event)"/>
+    <app-new-task [userId]="userId"
+    (close)="cancelTaskWindowEventConsumer()"/>
 }
 
 <section id="tasks">

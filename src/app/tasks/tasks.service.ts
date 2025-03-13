@@ -40,7 +40,7 @@ export class TasksService{
         return this.tasks.filter((task)=>task.userId === userId);
       }
 
-      addNewTask(taskData:NewTask,userId:string){
+      addingNewTask(taskData:NewTask,userId:string){
         this.tasks.push({
             id: new Date().getTime().toString(),
             userId: userId,

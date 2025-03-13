@@ -19,6 +19,9 @@ export class TasksComponent {
   @Input({required:true}) userId!:string;
   @Input() userName?:string;
   
+  consumeUserId(id:string){
+    this.userId=id;
+  }
 
   get selectedUserTasks(){
     return this.taskService.getUserTasks(this.userId);
@@ -38,7 +41,7 @@ export class TasksComponent {
   }
 
   addNewTask(taskData:NewTask){
-    this.taskService.addNewTask(taskData,this.userId);
+    this.taskService.addingNewTask(taskData,this.userId);
     this.isAddingTask = false;
   }
 }
