@@ -11,10 +11,8 @@ import { TasksService } from './tasks.service';
   styleUrl: './tasks.component.css'
 })
 export class TasksComponent {
-  
-  //private taskService = new TasksService();
-  private taskService:TasksService;
-  constructor(taskService:TasksService){
+  //private taskService:TasksService;
+  constructor(private taskService:TasksService){
     this.taskService =taskService;
   }
 
