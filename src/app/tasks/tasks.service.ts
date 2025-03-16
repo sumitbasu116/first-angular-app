@@ -48,6 +48,7 @@ export class TasksService{
       }
 
       addingNewTask(taskData:NewTask,userId:string){
+        console.log(taskData.dueDate);
         this.tasks.push({
             id: new Date().getTime().toString(),
             userId: userId,
